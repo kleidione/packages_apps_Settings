@@ -184,7 +184,7 @@
     <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
     <string name="screen_time_summary_usage_today">%1$s hoje</string>
     <!-- Refresh rate -->
-    <string name="low_power_refresh_rate_title_custom">Taxa de atualização para poupar energia</string>
+    <string name="low_power_refresh_rate_title_custom">Taxa de atualização em baixa energia</string>
     <!-- Menu option for not validating the EAP server -->
     <string name="wifi_do_not_validate_eap_server">Não validar</string>
     <!-- Warning message displayed if user choses not to validate the EAP server -->
