@@ -122,36 +122,12 @@
             Standard auto-rotation preference that will be shown when device state based
             auto-rotation settings are NOT available.
           -->
-        <SwitchPreferenceCompat
-            android:key="auto_rotate"
-            android:title="@string/accelerometer_title"
-            settings:keywords="@string/keywords_auto_rotate"
-            settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
 
         <!--
             Auto-rotation preference that will be shown when device state based auto-rotation
             settings are available.
           -->
-        <Preference
-            android:key="device_state_auto_rotate"
-            android:title="@string/accelerometer_title"
-            android:fragment="com.android.settings.display.DeviceStateAutoRotateDetailsFragment"
-            settings:keywords="@string/keywords_auto_rotate"
-            settings:controller="com.android.settings.display.DeviceStateAutoRotateOverviewController"/>
-
-        <lineageos.preference.LineagePartsPreference
-            android:key="rotation"
-            settings:replacesKey="auto_rotate"
-            settings:requiresConfig="@bool/config_show_advanced_rotation_settings"
-            settings:requiresFeature="android.hardware.sensor.accelerometer" />
-
-        <Preference
-            android:key="screen_resolution"
-            android:title="@string/screen_resolution_title"
-            android:fragment="com.android.settings.display.ScreenResolutionFragment"
-            settings:keywords="@string/keywords_screen_resolution"
-            settings:controller="com.android.settings.display.ScreenResolutionController"/>
-
+          
         <ListPreference
             android:key="custom_screen_resolution"
             android:title="@string/custom_screen_resolution_title"
@@ -196,13 +172,6 @@
             android:summary="@string/peak_refresh_rate_summary"
             settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>
 
-        <Preference
-            android:key="display_cutout_force_fullscreen_settings"
-            android:title="@string/display_cutout_force_fullscreen_title"
-            android:summary="@string/display_cutout_force_fullscreen_summary"
-            android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
-            settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
-
         <SwitchPreferenceCompat
             android:key="show_operator_name"
             android:title="@string/show_operator_name_title"
@@ -211,18 +180,6 @@
         <!--<lineageos.preference.LineagePartsPreference
             android:key="long_screen_settings"
             settings:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" />-->
-
-        <ListPreference
-            android:key="display_cutout_emulation"
-            android:title="@string/display_cutout_emulation"
-            settings:keywords="@string/display_cutout_emulation_keywords" />
-
-        <Preference
-            android:key="screensaver"
-            android:title="@string/screensaver_settings_title"
-            android:fragment="com.android.settings.dream.DreamSettings"
-            settings:keywords="@string/keywords_screensaver"
-            settings:controller="com.android.settings.display.ScreenSaverPreferenceController"/>
 
         <SwitchPreferenceCompat
             android:key="camera_gesture"
@@ -291,5 +248,12 @@
             android:key="vr_display_pref"
             android:title="@string/display_vr_pref_title"
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
+
+        <Preference
+            android:key="display_cutout_force_fullscreen_settings"
+            android:title="@string/display_cutout_force_fullscreen_title"
+            android:summary="@string/display_cutout_force_fullscreen_summary"
+            android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
+            settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
     </PreferenceCategory>
 </PreferenceScreen>
