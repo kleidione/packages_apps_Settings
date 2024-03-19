@@ -2060,6 +2060,7 @@
     <string name="accessibility_screen_magnification_state_navbar_gesture" msgid="8067042663897802231">"Ampliar com atalho e toque triplo"</string>
     <string name="accessibility_introduction_title" msgid="8834950581512452348">"Sobre <xliff:g id="SERVICE">%1$s</xliff:g>"</string>
     <string name="accessibility_text_reading_options_title" msgid="3224648909213325563">"Texto e tamanho de exibição"</string>
+    <string name="accessibility_text_reading_options_summary">Personalize o tamanho da exibição, fonte &amp; texto</string>
     <string name="accessibility_text_reading_options_suggestion_title" msgid="2492155642665312733">"Mudar a exibição do texto"</string>
     <string name="accessibility_text_reading_preview_mail_subject" msgid="4597374768612733616">"Assunto: Tipos de balões de ar quente"</string>
     <string name="accessibility_text_reading_preview_mail_from" msgid="1797499780365288020">"De: Bruno"</string>
