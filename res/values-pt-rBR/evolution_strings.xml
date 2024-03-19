@@ -11,12 +11,6 @@
     <!-- App search preference -->
     <string name="search">Pesquisar</string>
     <string name="search_apps">Pesquisar aplicativos</string>
-    <!-- Hide developer status -->
-    <string name="hide_developer_status_title">Ocultar status do desenvolvedor</string>
-    <string name="hide_developer_status_summary">Ocultar as Opções de Desenvolvedor para os aplicativos</string>
-    <!-- USB configuration -->
-    <string name="usb_default_config_title">Configuração USB</string>
-    <string name="usb_default_config_summary">Escolha o comportamento padrão quando conectado a um dispositivo via USB</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicativos em tela cheia</string>
     <string name="display_cutout_force_fullscreen_summary">Forçar aplicativos a ignorar o espaço do notch</string>
@@ -36,9 +30,6 @@
     <string name="qs_brightness_slider_haptic_feedback_title">Vibrar ao deslizar pela barra de brilho</string>
     <!-- Screenshot shutter -->
     <string name="screenshot_shutter_sound_title">Som de captura de tela</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Deslize para capturar a tela</string>
-    <string name="swipe_to_screenshot_gesture_summary">Deslize três dedos para tirar uma captura de tela</string>
     <!-- Deep Sleep percentage in device info -->
     <string name="status_sleep_time">Sono profundo</string>
     <!-- Show clipboard overlay -->
@@ -104,8 +95,8 @@
     <!-- Auto pin confirm -->
     <string name="lock_screen_auto_pin_confirm_summary_custom">Desbloquear automaticamente se você inserir o PIN correto. Isso é um pouco menos seguro do que tocar em Enter para confirmar.</string>
     <!-- Doze on charge -->
-    <string name="doze_on_charge_title">Tela sempre ativa durante o carregamento</string>
-    <string name="doze_on_charge_summary">Sempre mostrar a tela ambiente enquanto estiver carregando</string>
+    <string name="doze_on_charge_title">Sempre mostrar hora e informações durante o carregamento</string>
+    <string name="doze_on_charge_summary">Sempre mostrar hora e informações durante o carregamento</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Opções de vibração na chamada</string>
     <string name="incall_vibrate_connect_title">Vibrar ao conectar</string>
@@ -239,9 +230,58 @@
     <!-- No storage restrict -->
     <string name="no_storage_restrict_title">Sem restrição de armazenamento</string>
     <string name="no_storage_restrict_summary">Remover a restrição ao selecionar pastas através do Storage Access Framework. Pode ser conveniente em alguns casos, mas pode levar a vazamentos de privacidade.</string>
+    <!-- Wifi Display settings. The title of a menu item to disable mirroring confimration [CHAR LIMIT=40] -->
+    <string name="mirroring_confirmation_disable_menu_item">Desativar confirmação de espelhamento</string>
+    <!-- Game space -->
+    <string name="game_space_title">Espaço de jogos</string>
+    <string name="game_space_summary">Melhore sua experiência de jogo</string>
+    <!-- AOD/Extra dim schedule -->
+    <string name="extra_dim_schedule_title">Programar extra dim</string>
+    <string name="string_disabled">Desabilitado</string>
+    <string name="always_on_display_schedule_title">Programar sempre mostrar hora e informações</string>
+    <string name="always_on_display_schedule_sunset">Pôr do sol</string>
+    <string name="always_on_display_schedule_sunrise">Nascer do sol</string>
+    <string name="always_on_display_schedule_mixed_sunset">Ativado do pôr do sol até um momento programado</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Ativado de um momento programado até o nascer do sol</string>
+    <!-- DC Dimming -->
+    <string name="dc_dimming_title">DC Dimming</string>
+    <string name="dc_dimming_info">Reduz a fadiga ocular em condições de pouca luz, minimizando a cintilação da tela. Pode resultar em qualidade de imagem reduzida e produção de cor ruim, ou maior consumo de energia.</string>
+    <string name="dc_dimming_main_switch_title">Usar DC Dimming</string>
+    <string name="keywords_display_dc_dimming">dc dimming, anti, flicker, olho, tensão</string>
+    <!-- Radio Info -->
+    <string name="radio_info_title">Informações de rádio</string>
     <!-- Hotspot -->
     <string name="wifi_hotspot_hidden_ssid_title">Rede oculta</string>
     <string name="wifi_hotspot_hidden_ssid_summary">O nome do seu ponto de acesso não aparecerá na lista de redes wi-fi disponíveis.</string>
+    <string name="wifi_hotspot_client_manager_title">Dispositivos conectados</string>
+    <string name="wifi_hotspot_client_manager_summary">Listar e gerenciar dispositivos conectados ao hotspot</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Listar dispositivos conectados ao hotspot</string>
+    <string name="wifi_hotspot_client_limit_title">Limite de dispositivos conectados</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Dispositivos bloqueados</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Dispositivos conectados</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Dispositivo de bloqueio</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Esta ação desconectará \"<xliff:g id="device_name">%1$s</xliff:g>\" deste dispositivo e o adicionará à lista de bloqueio</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Desbloquear dispositivo</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">O dispositivo \"<xliff:g id="device_name">%1$s</xliff:g>\" poderá se conectar a este hotspot</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Nenhum cliente está disponível no momento. Dispositivos conectados e bloqueados serão listados aqui quando disponíveis.</string>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Até <xliff:g id="device_num">%1$d</xliff:g>o dispositivos podem se conectar a este hotspot</item>
+        <item quantity="one">Até <xliff:g id="device_num">%1$d</xliff:g> o dispositivo pode se conectar a este hotspot</item>
+    </plurals>
+    <!-- Smart 5G -->
+    <string name="smart_5g_title">5G inteligente</string>
+    <string name="smart_5g_summary">Alterne automaticamente entre 5G e 4G para reduzir o consumo da bateria</string>
+    <!-- Hide developer status -->
+    <string name="hide_developer_status_title">Ocultar status do desenvolvedor</string>
+    <string name="hide_developer_status_summary">Ocultar status de desenvolvedor de aplicativos</string>
+    <!-- USB configuration -->
+    <string name="usb_default_config_title">Configuração USB</string>
+    <string name="usb_default_config_summary">Escolha o comportamento padrão quando conectado a um dispositivo via USB</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Deslize para a captura de tela</string>
+    <string name="swipe_to_screenshot_gesture_summary">Deslize três dedos para fazer uma captura de tela</string>
     <!-- General -->
     <string name="copied_to_clipboard">Copiado para a área de transferência</string>
     <string name="longpress_to_clipboard">Pressione e segure para copiar</string>
